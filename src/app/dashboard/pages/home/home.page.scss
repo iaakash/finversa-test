@@ -1,0 +1,21 @@
+ion-icon {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+span.tagline {
+    font-size: 0.80rem;
+}
+
+ion-card-content {
+    min-height: 25vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-logo {
+    width: 35px;
+    margin-left: 30px;
+}

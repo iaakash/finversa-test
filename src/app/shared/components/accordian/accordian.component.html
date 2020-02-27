@@ -1,0 +1,27 @@
+<ion-list class="fin-accord ion-margin-top" color="white">
+  <ion-list-header class="ion-no-padding" *ngFor="let item of config.items; let idx = index" no-lines no-padding
+  [ngClass]="{'selection-active': item.open, 'section': !item.open}">
+<ion-item class="ion-no-margin" button (click)="toggleSelection(idx)" color="white" lines="none"  detail="false">
+  <span class="count">{{idx+1}}</span>
+  <ion-label>
+    {{item.name}}
+  </ion-label>
+</ion-item>
+   
+    <ion-item class="sec" *ngIf="item.open && item.children" color="primary" lines="none"> 
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6" *ngFor="let info of item.children">
+            <ion-card class="ion-no-margin ion-text-center">
+              <ion-card-content>
+                <ion-icon name="document-text-outline"></ion-icon>
+                <ion-card-subtitle>{{info.name}}</ion-card-subtitle>
+                <span class="tagline">{{info.status}}</span>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          </ion-row>
+          </ion-grid>
+    </ion-item>
+  </ion-list-header>
+</ion-list>

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <img src="assets/messi.jpg" />
+    
+    <ion-card-content>
+      <div class="row" *ngFor="let item of profileDetails | keyvalue">
+        <ion-card-subtitle>{{ item.key }}</ion-card-subtitle>
+        <ion-card-title>{{item.value}}</ion-card-title>
+      </div>
+
+  
+      
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

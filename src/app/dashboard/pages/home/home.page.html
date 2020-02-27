@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <img class="small-logo" src="assets/small-logo.png" alt="">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let item of menuConfig">
+        <ion-card color="secondary" class="ion-no-margin ion-text-center">
+          <ion-card-content>
+            <ion-icon name="{{item.icon}}"></ion-icon>
+            <ion-card-subtitle>{{item.title}}</ion-card-subtitle>
+            <span class="tagline">{{item.subtitle}}</span>
+          </ion-card-content>
+          
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-title color="secondary">Copyright Finversa</ion-title>
+  </ion-toolbar>
+</ion-footer>

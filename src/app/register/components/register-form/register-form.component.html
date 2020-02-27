@@ -1,0 +1,18 @@
+<form novalidate (ngSubmit)="onSubmit(registerForm.value)" [formGroup]="registerForm">
+  <div *ngFor="let prop of registerFormProperties">
+
+    <ion-item [ngSwitch]="prop.type" class="ion-no-padding">
+      <ion-label position="floating" color="primary" [attr.for]="prop">{{prop.label}}</ion-label>
+      <ion-input
+        [formControlName]="prop.key"
+        [id]="prop.key" [type]="prop.type"></ion-input>
+    </ion-item>
+
+    <div class="error" *ngIf="registerForm.get(prop.key).invalid && (registerForm.get(prop.key).dirty || registerForm.get(prop.key).touched)">
+      <div *ngIf="registerForm.get(prop.key).errors.required">
+        {{ prop.label }} is required.
+      </div>
+    </div>
+  </div>
+    <ion-button [disabled]="registerForm.invalid" type="submit" class="ion-no-margin ion-margin-vertical" expand="full" color="primary">CREATE</ion-button>
+ </form>

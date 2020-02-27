@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 393.07068 84.153465"
+   height="84.153465"
+   width="393.07068"
+   xml:space="preserve"
+   id="svg2"
+   version="1.1"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs6"><clipPath
+       id="clipPath26"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path24"
+         d="M 0,63.115 H 294.803 V 0 H 0 Z" /></clipPath></defs><g
+     transform="matrix(1.3333333,0,0,-1.3333333,0,84.153467)"
+     id="g10"><g
+       transform="translate(0,63.1152)"
+       id="g12"><path
+         id="path14"
+         style="fill:#1e283a;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 0,0 v -51.683 l 19.979,-10e-4 0.003,31.702 31.702,0.003 L 51.682,0 Z" /></g><g
+       transform="translate(29.543,33.5725)"
+       id="g16"><path
+         id="path18"
+         style="fill:#349dd8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 0,0 V -22.143 H 22.142 L 22.14,-0.002 Z" /></g><g
+       id="g20"><g
+         clip-path="url(#clipPath26)"
+         id="g22"><text
+           id="text32"
+           style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:42.19300079px;font-family:Roboto;-inkscape-font-specification:Roboto-Bold;writing-mode:lr-tb;fill:#349dd8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(0.99833859,0,0,-1,63.6533,11.4346)"><tspan
+             id="tspan28"
+             y="0"
+             x="0 26.919134 43.496765">FIN</tspan><tspan
+             id="tspan30"
+             y="0"
+             x="77.677315 109.67648 138.15254 168.86905 198.75856">VERSA</tspan></text>
+</g></g></g></svg>

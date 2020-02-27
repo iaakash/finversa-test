@@ -1,0 +1,26 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content> -->
+<ion-split-pane contentId="main">
+  <ion-menu contentId="main">
+    <ion-header>
+      <ion-toolbar>
+        <img class="menu-logo" src="assets/logo.svg" alt="">
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle auto-hide="false" *ngFor="let item of menuItems">
+          <ion-item lines="none" [routerLink]="item.url" routerDirection="root" [class.active-item]="currentPath === item.url">{{item.title}}</ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="content" id="main"></ion-router-outlet>
+</ion-split-pane>
